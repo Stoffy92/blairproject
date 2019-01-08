@@ -84,6 +84,7 @@
   position: absolute;
   bottom: 4em;
   box-shadow: 2px 3px #00000085;
+  font-family: "Lato", sans-serif;
 }
 
 .couple-container {
@@ -96,7 +97,6 @@
 .couple-container-header {
   text-align: center;
   font-family: "Lato", sans-serif;
-  padding: 1em;
 }
 
 .couple-groom-container, .couple-bride-container {
