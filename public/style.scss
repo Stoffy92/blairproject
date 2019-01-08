@@ -95,6 +95,9 @@ $grey2: #4a4a4a;
   bottom: 4em;
   box-shadow: 2px 3px #00000085;
   font-family: $font-main;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: $grey;
 }
 
 .couple-container {
