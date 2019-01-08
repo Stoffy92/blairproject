@@ -1,0 +1,175 @@
+body  
+  margin: 0 auto
+
+.hero-image  
+ display: flex
+ flex-direction: column
+ background-image: url(./images/final_edit2.svg)
+ background-size: 100% 100%
+ background-position: center
+ background-repeat: no-repeat
+ background-size: cover
+ height: 100vh
+ min-height: 100%
+ justify-content: center
+
+.header-bride-text, .header-groom-text 
+ font-family: 'Oleo Script', sans-serif
+ text-align: center
+ font-size: 7em
+ margin-bottom: 0.9em
+ color: rgba(255, 255, 255, 0.945)
+ text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black
+ border-color: #342E37
+ -moz-text-stroke-width: 1px
+ -moz-text-stroke-color: #342E37
+
+.header-bride-text 
+ margin-right: 45%
+
+
+.header-subtext 
+ margin-bottom: 3.5em
+
+.header-location-text
+ padding-top: 1%
+ 
+.header-and-text 
+ display: none
+
+.header-groom-text 
+ margin-left: 30%
+
+.header-date-text, .header-location-text, .header-subtext
+ font-family: 'Lato', sans-serif
+ text-align: center
+ text-transform: uppercase
+ color: #342E37
+ font-size: 1em
+
+.rsvp-button 
+ border: 2px solid black
+ background-color: white
+ color: black
+ padding: 14px 28px
+ font-size: 16px
+ cursor: pointer
+ border-color: #4CAF50
+ color: green
+
+.couple-container 
+ display: flex
+ justify-content: center
+ color: rgba(255, 255, 255, 0.945)
+ background-color: #342E37
+
+
+.couple-container-header 
+ text-align: center
+ font-family: 'Lato', sans-serif
+
+.couple-groom-container, .couple-bride-container 
+ font-family: 'Lato', sans-serif
+
+
+.title-couple-container 
+ color: rgba(255, 255, 255, 0.945)
+ display: flex
+ justify-content: center
+ flex-direction: column
+ background-color: #342E37
+ height: 100vh
+
+
+.circle.small 
+ border: 3px solid #f84342
+ border-radius: 50%
+ width: 220px
+ height: 220px
+ z-index: 86
+
+
+.zac, .blair 
+ display: flex
+ height: 185px
+ justify-content: center
+ align-content: center
+ align-self: center
+
+.couple-subtext 
+ text-align: center
+
+
+.groom-img, .bride-img 
+ display: flex
+ justify-content: center
+
+
+.groom-info, .bride-info 
+ width: 50%
+
+
+.divider path 
+ fill: #fff
+
+
+.circle.filled 
+ background-color: #666666
+
+/* Mobile Styles */
+
+/* Basline Mobile */
+@media only screen and (max-width: 600px)
+  .header-bride-text, .header-groom-text 
+   font-size: 5.6em
+   color: rgba(255, 255, 255, 0.945)
+   text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black
+	 border-color: black
+	 -moz-text-stroke-width: 1px
+	 -moz-text-stroke-color: black
+  
+  .header-bride-text
+   position: absolute
+   bottom: 0.4em
+  
+
+  .hero-image 
+   width: 109vw
+  
+  .header-and-text 
+   display: flex
+   font-family: 'Oleo Script', sans-serif
+  
+
+  .header-groom-text 
+   position: absolute
+   bottom: 1.5em
+   left: 0.9em
+  
+
+  .header-and-text 
+   color: #342E37
+   position: absolute
+   left: 80%
+   right: 25%
+   bottom: 4.5em
+  
+
+  .header-date-text 
+   position: absolute
+   top: -1em
+   left: 25%
+   right: 25%
+  
+
+  .header-subtext 
+   position: absolute
+   bottom: -2em
+   left: 25%
+   right: 25%
+  
+
+
+/* Tablet */
+@media only screen and (min-width:601px) and (max-width: 1019px) 
+

@@ -1,0 +1,225 @@
+/* $phone: max-width 600px */
+
+$font-header: 'Oleo Script', sans-serif;
+$font-main: 'Lato', sans-serif;
+$grey: #342E37;
+$white:	#F8F8F8;
+$grey2: #4a4a4a;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.hero-image {
+ display: flex;
+ flex-direction: column;
+ background-image: url(./images/final_edit2.svg);
+ background-size: 100% 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100vh;
+ min-height: 100%;
+ justify-content: center;
+}
+
+
+
+.header-bride-text, .header-groom-text {
+ font-family: $font-header;
+ text-align: center;
+ font-size: 7em;
+ margin-bottom: 0.9em;
+ color: $white;
+ text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+ border-color: #342E37;
+ -moz-text-stroke-width: 1px;
+ -moz-text-stroke-color: $grey;
+}
+
+.header-bride-text {
+ margin-right: 45%;
+}
+
+.header-subtext {
+ margin-bottom: 3.5em;
+}
+
+.header-location-text {
+ padding-top: 1%;
+}
+
+.header-subtext {
+  position: absolute;
+  bottom: -2em;
+  align-self: center;
+ }
+
+.header-and-text {
+ display: none;
+}
+
+.header-groom-text {
+ margin-left: 30%;
+}
+
+.header-date-text, .header-location-text, .header-subtext {
+ font-family: $font-main;
+ text-align: center;
+ text-transform: uppercase;
+ color: $grey;
+ font-size: 1em;
+ 
+}
+.header-date-text {
+  position: absolute;
+  top: 1em;
+  align-self: center;
+  position: absolute;
+}
+
+.rsvp-button {
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: Transparent;
+  color: black;
+  padding: 20px 65px;
+  font-size: 1em;
+  cursor: pointer;
+  border-color: #ffffff;
+  color: $grey;
+  align-self: center;
+  position: absolute;
+  bottom: 4em;
+  box-shadow: 2px 3px #00000085;
+}
+
+.couple-container {
+ display: flex;
+ justify-content: center;
+ color: $white;
+ background-color: $grey;
+}
+
+
+.couple-container-header {
+ text-align: center;
+ font-family: $font-main;
+}
+
+.couple-groom-container, .couple-bride-container {
+ font-family: $font-main;
+}
+
+
+.title-couple-container {
+ color: rgba(255, 255, 255, 0.945);
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ background-color: $grey;
+ height: 100vh;
+}
+
+.zac, .blair {
+ display: flex;
+ height: 185px;
+ justify-content: center;
+ align-content: center;
+ align-self: center;
+}
+
+.couple-subtext {
+ text-align: center;
+}
+
+.groom-img, .bride-img {
+ display: flex;
+ justify-content: center;
+}
+
+.groom-info, .bride-info {
+ width: 50%;
+}
+
+/* Mobile Styles */
+
+/* Basline Mobile */
+@media only screen and (max-width: 600px){
+ .header-bride-text, .header-groom-text {
+  font-size: 5.6em;
+  color: $white;
+  
+ }
+
+ .header-and-text, .header-bride-text, .header-groom-text {
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  border-color: black;
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: black;
+  color: $white;
+ }
+  
+ .header-bride-text {
+  position: absolute;
+  bottom: 0.4em;
+  padding-left: 5%;
+ }
+
+ .title-couple-container {
+   display: block;
+ }
+
+ .couple-container {
+   flex-direction: column;
+ }
+
+ .couple-subtext {
+   padding: 0.5em;
+ }
+
+ .hero-image {
+  width: 100vw;
+ }
+
+ .groom-info, .bride-info {
+   width: 85%;
+   padding: 1em;
+ }
+ 
+ .header-and-text {
+  display: flex;
+  font-family: 'Oleo Script', sans-serif;
+ }
+  
+
+ .header-groom-text {
+  position: absolute;
+  bottom: 1.5em;
+  right: 5%;
+ }
+  
+ .header-and-text {
+  color: #ffffff;
+  position: absolute;
+  left: 55%;
+  right: 25%;
+  bottom: 6.3em;
+ }
+
+ .header-date-text {
+  position: absolute;
+  top: 1em;
+}
+  
+
+ .header-subtext {
+  position: absolute;
+  bottom: -2em;
+ }
+}
+
+/* Tablet */
+@media only screen and (min-width:601px) and (max-width: 1019px) {}
