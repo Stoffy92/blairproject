@@ -5,6 +5,9 @@ $font-main: 'Lato', sans-serif;
 $grey: #342E37;
 $white:	#F8F8F8;
 $grey2: #4a4a4a;
+$cardColor: rgb(218, 221, 238, 0.6);
+$cardTextColor:rgba(51, 62, 105, 0.945);
+
 
 * {
   box-sizing: border-box;
@@ -110,6 +113,7 @@ $grey2: #4a4a4a;
 .couple-container-header {
  text-align: center;
  font-family: $font-main;
+ padding: 1em;
 }
 
 .couple-groom-container, .couple-bride-container {
@@ -118,7 +122,7 @@ $grey2: #4a4a4a;
  transition: 0.3s;
  width: 500px;
  margin: 2em;
- background-color: rgb(158, 194, 255, 0.6);
+ background-color: $cardColor;
  border-radius: 5px;
  margin: auto;
  margin-bottom: 1em;
@@ -127,7 +131,7 @@ $grey2: #4a4a4a;
 
 
 .title-couple-container {
- color: rgba(255, 255, 255, 0.945);
+ color: $cardTextColor;
  display: flex;
  justify-content: center;
  flex-direction: column;

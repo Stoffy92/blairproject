@@ -98,6 +98,7 @@
 .couple-container-header {
   text-align: center;
   font-family: "Lato", sans-serif;
+  padding: 1em;
 }
 
 .couple-groom-container, .couple-bride-container {
@@ -106,7 +107,7 @@
   transition: 0.3s;
   width: 500px;
   margin: 2em;
-  background-color: rgba(158, 194, 255, 0.6);
+  background-color: rgba(218, 221, 238, 0.6);
   border-radius: 5px;
   margin: auto;
   margin-bottom: 1em;
@@ -114,7 +115,7 @@
 }
 
 .title-couple-container {
-  color: rgba(255, 255, 255, 0.945);
+  color: rgba(51, 62, 105, 0.945);
   display: flex;
   justify-content: center;
   flex-direction: column;
