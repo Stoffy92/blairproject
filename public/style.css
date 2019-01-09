@@ -171,6 +171,7 @@
   .title-couple-container {
     display: block;
     overflow: scroll;
+    height: auto;
   }
 
   .couple-container {
@@ -190,7 +191,7 @@
   }
 
   .groom-info, .bride-info {
-    width: 85%;
+    width: 100%;
     padding: 1em;
   }
 
