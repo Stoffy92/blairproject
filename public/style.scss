@@ -102,8 +102,8 @@ $grey2: #4a4a4a;
 .couple-container {
  display: flex;
  justify-content: center;
- color: $white;
- background-color: $grey;
+//  color: $white;
+//  background-color: $grey;
 }
 
 
@@ -114,6 +114,12 @@ $grey2: #4a4a4a;
 
 .couple-groom-container, .couple-bride-container {
  font-family: $font-main;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+ transition: 0.3s;
+ width: 500px;
+ margin: 2em;
+ background-color: rgb(158, 194, 255, 0.6);
+ border-radius: 5px;
 }
 
 
@@ -122,7 +128,11 @@ $grey2: #4a4a4a;
  display: flex;
  justify-content: center;
  flex-direction: column;
- background-color: $grey;
+ background-image: url(./images/couple_gradient.png);
+ background-size: 100% 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
  height: 100vh;
 }
 
@@ -135,6 +145,7 @@ $grey2: #4a4a4a;
 }
 
 .couple-subtext {
+ padding: 0.4em;
  text-align: center;
 }
 
@@ -144,7 +155,8 @@ $grey2: #4a4a4a;
 }
 
 .groom-info, .bride-info {
- width: 50%;
+ padding: 1em;
+ width: 85%;
 }
 
 /* Mobile Styles */
@@ -172,7 +184,8 @@ $grey2: #4a4a4a;
  }
 
  .title-couple-container {
-   display: block;
+  display: block;
+  overflow: scroll;
  }
 
  .couple-container {
@@ -185,6 +198,11 @@ $grey2: #4a4a4a;
 
  .hero-image {
   width: 100vw;
+ }
+
+ .couple-bride-container, .couple-groom-container {
+   margin: 0;
+   width: 90%;
  }
 
  .groom-info, .bride-info {
