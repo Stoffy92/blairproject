@@ -2,6 +2,8 @@
 
 $font-header: 'Oleo Script', sans-serif;
 $font-main: 'Lato', sans-serif;
+$font-rsvp: 'Arvo', serif;
+$font-fancy: 'Great Vibes', sans-serif;
 $grey: #342E37;
 $white:	#F8F8F8;
 $grey2: #4a4a4a;
@@ -18,7 +20,7 @@ $cardTextColor:rgba(51, 62, 105, 0.945);
 .hero-image {
  display: flex;
  flex-direction: column;
- background-image: url(./images/final_edit2.svg);
+ background-image: url(./images/final_edit3.svg);
  background-size: 100% 100%;
  background-position: center;
  background-repeat: no-repeat;
@@ -31,7 +33,7 @@ $cardTextColor:rgba(51, 62, 105, 0.945);
 
 
 .header-bride-text, .header-groom-text {
- font-family: $font-header;
+ font-family: $font-fancy;
  text-align: center;
  font-size: 7em;
  margin-bottom: 0.9em;
@@ -69,11 +71,10 @@ $cardTextColor:rgba(51, 62, 105, 0.945);
 }
 
 .header-date-text, .header-location-text, .header-subtext {
- font-family: $font-main;
+ font-family: $font-fancy;
  text-align: center;
- text-transform: uppercase;
  color: $grey;
- font-size: 1em;
+ font-size: 1.4em;
  
 }
 .header-date-text {
@@ -84,23 +85,26 @@ $cardTextColor:rgba(51, 62, 105, 0.945);
 }
 
 .rsvp-button {
-  border: 3px solid black;
-  border-radius: 25px;
+  letter-spacing: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
   background-color: Transparent;
   color: black;
-  padding: 20px 65px;
-  font-size: 1em;
+  padding: 8px 90px;
+  font-size: 1.2em;
   cursor: pointer;
-  border-color: #ffffff;
+  border-color: $grey;
   color: $white;
   align-self: center;
   position: absolute;
-  bottom: 4em;
-  box-shadow: 2px 3px #00000085;
-  font-family: $font-main;
+  bottom: 3em;
+  // box-shadow: 2px 3px #00000085;
+  font-family: $font-rsvp;
   -moz-text-stroke-width: 1px;
   -moz-text-stroke-color: $grey;
-  text-shadow: -1px 0 black, 0 0.5px black, 1px 0 black, 0 -1px black;}
+  text-shadow: -1px 0 black, 0 0.5px black, 1px 0 black, 0 -1px black;
+  margin-bottom: 10px;
+}
 
 .couple-container {
  display: flex;
@@ -230,6 +234,7 @@ $cardTextColor:rgba(51, 62, 105, 0.945);
  }
   
  .header-and-text {
+  font-family: $font-fancy;
   color: #ffffff;
   position: absolute;
   left: 55%;
@@ -245,7 +250,7 @@ $cardTextColor:rgba(51, 62, 105, 0.945);
 
  .header-subtext {
   position: absolute;
-  bottom: -2em;
+  bottom: -3em;
  }
 }
 
