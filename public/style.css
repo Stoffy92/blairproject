@@ -7,7 +7,7 @@
 .hero-image {
   display: flex;
   flex-direction: column;
-  background-image: url(./images/final_edit3.svg);
+  background-image: url(./images/hero-image-couple.svg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,8 +97,9 @@
 
 .couple-container-header {
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Great Vibes", sans-serif;
   padding: 1em;
+  font-size: 3.35em;
 }
 
 .couple-groom-container, .couple-bride-container {
@@ -148,6 +149,7 @@
 .groom-info, .bride-info {
   padding: 1em;
   width: 85%;
+  line-height: 1.3;
 }
 
 /* Mobile Styles */
@@ -197,6 +199,7 @@
   .groom-info, .bride-info {
     width: 100%;
     padding: 1em;
+    line-height: 1.5;
   }
 
   .header-and-text {
