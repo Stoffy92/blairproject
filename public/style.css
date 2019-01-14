@@ -120,7 +120,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./images/couple_gradient.png);
+  background-image: url(./images/couple_gradient.svg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
