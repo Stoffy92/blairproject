@@ -17,16 +17,17 @@
   justify-content: center;
 }
 
-.header-bride-text, .header-groom-text {
+.header-bride-text,
+.header-groom-text {
   font-family: "Great Vibes", sans-serif;
   text-align: center;
   font-size: 7em;
   margin-bottom: 0.9em;
-  color: #F8F8F8;
+  color: #f8f8f8;
   text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-  border-color: #342E37;
+  border-color: #342e37;
   -moz-text-stroke-width: 1px;
-  -moz-text-stroke-color: #342E37;
+  -moz-text-stroke-color: #342e37;
 }
 
 .header-bride-text {
@@ -55,10 +56,12 @@
   margin-left: 30%;
 }
 
-.header-date-text, .header-location-text, .header-subtext {
+.header-date-text,
+.header-location-text,
+.header-subtext {
   font-family: "Great Vibes", sans-serif;
   text-align: center;
-  color: #342E37;
+  color: #342e37;
   font-size: 1.4em;
 }
 
@@ -78,14 +81,14 @@
   padding: 8px 90px;
   font-size: 1.2em;
   cursor: pointer;
-  border-color: #342E37;
-  color: #F8F8F8;
+  border-color: #342e37;
+  color: #f8f8f8;
   align-self: center;
   position: absolute;
   bottom: 3em;
   font-family: "Arvo", serif;
   -moz-text-stroke-width: 1px;
-  -moz-text-stroke-color: #342E37;
+  -moz-text-stroke-color: #342e37;
   text-shadow: -1px 0 black, 0 0.5px black, 1px 0 black, 0 -1px black;
   margin-bottom: 10px;
 }
@@ -102,9 +105,10 @@
   font-size: 3.35em;
 }
 
-.couple-groom-container, .couple-bride-container {
+.couple-groom-container,
+.couple-bride-container {
   font-family: "Lato", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 500px;
   margin: 2em;
@@ -128,7 +132,8 @@
   height: 100vh;
 }
 
-.zac, .blair {
+.zac,
+.blair {
   display: flex;
   height: 185px;
   justify-content: center;
@@ -141,31 +146,124 @@
   text-align: center;
 }
 
-.groom-img, .bride-img {
+.groom-img,
+.bride-img {
   display: flex;
   justify-content: center;
 }
 
-.groom-info, .bride-info {
+.groom-info,
+.bride-info {
   padding: 1em;
   width: 85%;
   line-height: 1.3;
 }
 
+.wedding-info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-image: url(./images/gradient-splash.svg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wedding-card-container {
+  display: flex;
+}
+
+.ceremony-venue-card,
+.party-venue-card {
+  margin: auto;
+  width: 35%;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.card-info {
+  font-family: "Lato", sans-serif;
+  color: #4a4a4a;
+  width: 100%;
+  padding: 1em;
+  line-height: 1.3;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-header {
+  font-family: "Great Vibes", sans-serif;
+  color: #342e37;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.countdown {
+  font-family: "Great Vibes", sans-serif;
+  text-align: center;
+  color: #342e37;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv {
+  font-family: "Great Vibes", sans-serif;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  background: #eeaeca;
+  background: -moz-linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
+  background: -webkit-linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
+  background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+  width: 25%;
+  opacity: 0.7;
+  border-radius: 15px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
 /* Mobile Styles */
 /* Basline Mobile */
 @media only screen and (max-width: 600px) {
-  .header-bride-text, .header-groom-text {
+  .header-bride-text,
+.header-groom-text {
     font-size: 5.6em;
-    color: #F8F8F8;
+    color: #f8f8f8;
   }
 
-  .header-and-text, .header-bride-text, .header-groom-text {
+  .header-and-text,
+.header-bride-text,
+.header-groom-text {
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
     border-color: black;
     -moz-text-stroke-width: 1px;
     -moz-text-stroke-color: black;
-    color: #F8F8F8;
+    color: #f8f8f8;
   }
 
   .header-bride-text {
@@ -192,11 +290,13 @@
     width: 100vw;
   }
 
-  .couple-bride-container, .couple-groom-container {
+  .couple-bride-container,
+.couple-groom-container {
     width: 80%;
   }
 
-  .groom-info, .bride-info {
+  .groom-info,
+.bride-info {
     width: 100%;
     padding: 1em;
     line-height: 1.5;
@@ -230,6 +330,20 @@
   .header-subtext {
     position: absolute;
     bottom: -3em;
+  }
+
+  .wedding-card-container {
+    flex-direction: column;
+  }
+
+  .ceremony-venue-card, .party-venue-card {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+
+  #clockdiv {
+    width: 100%;
   }
 }
 /* Tablet */
