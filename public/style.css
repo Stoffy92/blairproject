@@ -336,7 +336,8 @@
     flex-direction: column;
   }
 
-  .ceremony-venue-card, .party-venue-card {
+  .ceremony-venue-card,
+.party-venue-card {
     width: 95%;
     margin: auto;
     margin-bottom: 2em;
