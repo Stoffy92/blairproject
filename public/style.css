@@ -346,6 +346,10 @@
   #clockdiv {
     width: 100%;
   }
+
+  .portrait-img {
+    width: 125px;
+  }
 }
 /* Tablet */
 
