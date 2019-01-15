@@ -688,7 +688,7 @@ fieldset {
   }
 
   .rsvp-button {
-    font-family: "Arvo", sans-serif;
+    font-family: "Arvo", sans-serif !important;
   }
 
   .header-and-text,
