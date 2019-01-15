@@ -87,7 +87,7 @@ $boxShadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 	border: 2px solid black;
 	border-radius: 10px;
 	background-color: Transparent;
-	color: black;
+	color: $grey;
 	padding: 8px 90px;
 	font-size: 1.2em;
 	cursor: pointer;
@@ -97,10 +97,10 @@ $boxShadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 	position: absolute;
 	bottom: 3em;
 	// box-shadow: 2px 3px #00000085;
-	font-family: $font-header; // iOS not using correct font
+	font-family: $font-rsvp; // iOS not using correct font
 	-moz-text-stroke-width: 1px;
 	-moz-text-stroke-color: $grey;
-	text-shadow: -1px 0 black, 0 0.5px black, 1px 0 black, 0 -1px black;
+	text-shadow: -1px 0 black, 0 1.4px black, 1px 0 black, 0 -1px black;
 	margin-bottom: 10px;
 }
 
