@@ -714,10 +714,6 @@ fieldset {
     flex-direction: column;
   }
 
-  .couple-subtext {
-    padding: 0.1em;
-  }
-
   .hero-image {
     width: 100vw;
     background-size: 175% 100%;
