@@ -85,7 +85,7 @@
   align-self: center;
   position: absolute;
   bottom: 3em;
-  font-family: "Arvo", sans-serif;
+  font-family: "Arvo", sans-serif !important;
   -moz-text-stroke-width: 1px;
   -moz-text-stroke-color: #342e37;
   text-shadow: -1px 0 black, 0 0.5px black, 1px 0 black, 0 -1px black;
