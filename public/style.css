@@ -687,6 +687,10 @@ fieldset {
     color: #f8f8f8;
   }
 
+  .rsvp-button {
+    font-family: "Arvo", sans-serif;
+  }
+
   .header-and-text,
 .header-bride-text,
 .header-groom-text {
