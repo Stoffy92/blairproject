@@ -78,14 +78,14 @@
   background-color: Transparent;
   color: black;
   padding: 8px 90px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   cursor: pointer;
   border-color: #342e37;
   color: #f8f8f8;
   align-self: center;
   position: absolute;
   bottom: 3em;
-  font-family: "Arvo", sans-serif !important;
+  font-family: "Oleo Script", sans-serif;
   -moz-text-stroke-width: 1px;
   -moz-text-stroke-color: #342e37;
   text-shadow: -1px 0 black, 0 0.5px black, 1px 0 black, 0 -1px black;
@@ -685,10 +685,6 @@ fieldset {
 .header-groom-text {
     font-size: 5.6em;
     color: #f8f8f8;
-  }
-
-  .rsvp-button {
-    font-family: "Arvo", sans-serif !important;
   }
 
   .header-and-text,
