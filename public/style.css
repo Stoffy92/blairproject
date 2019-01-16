@@ -787,6 +787,10 @@ label {
     flex-direction: column;
   }
 
+  .form-container {
+    left: 0%;
+  }
+
   .hero-image {
     width: 100vw;
     background-size: 175% 100%;
