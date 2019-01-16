@@ -249,21 +249,41 @@
 
 /* Form Styling */
 .form-container {
-  position: relative;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 25%;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  flex-direction: column;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
   max-width: 40rem;
   margin: 5rem auto;
-  background: #fff;
-  width: 100%;
-  padding: 3rem 5rem 0;
-  border-radius: 1px;
-  display: none;
-  z-index: 9;
+  background: #eeaeca;
+  background: -moz-linear-gradient(72deg, #eeaeca 0%, #94bbe9 100%);
+  background: -webkit-linear-gradient(72deg, #eeaeca 0%, #94bbe9 100%);
+  background: linear-gradient(72deg, #eeaeca 0%, #94bbe9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
 
 .form-header-rsvp {
   font-family: "Arvo", sans-serif;
   text-align: center;
   letter-spacing: 5px;
+  font-style: italic;
+  color: #fff;
 }
 
 .form-container::before {
@@ -314,11 +334,13 @@ fieldset {
 .form-help {
   margin-top: 0.125rem;
   margin-left: 0.125rem;
-  color: #b3b3b3;
+  color: #f8f8f8;
   font-size: 0.8rem;
 }
 
-.checkbox .form-help, .form-radio .form-help, .form-group .form-help {
+.checkbox .form-help,
+.form-radio .form-help,
+.form-group .form-help {
   position: absolute;
   width: 100%;
 }
@@ -358,7 +380,7 @@ fieldset {
   pointer-events: none;
   padding-left: 0.125rem;
   z-index: 1;
-  color: #b3b3b3;
+  color: #fff;
   font-size: 1rem;
   font-weight: normal;
   -webkit-transition: all 0.28s ease;
@@ -367,7 +389,7 @@ fieldset {
 
 .form-group .bar {
   position: relative;
-  border-bottom: 0.0625rem solid #999;
+  border-bottom: 0.0625rem solid #fff;
   display: block;
 }
 
@@ -417,7 +439,7 @@ fieldset {
 .form-group textarea:valid,
 .form-group textarea.form-file,
 .form-group textarea.has-value {
-  color: #333;
+  color: #ffffff;
 }
 
 .form-group select ~ .control-label,
@@ -430,7 +452,7 @@ fieldset {
 .form-group textarea.form-file ~ .control-label,
 .form-group textarea.has-value ~ .control-label {
   font-size: 0.8rem;
-  color: gray;
+  color: #ffffff;
   top: -1rem;
   left: 0;
 }
@@ -460,7 +482,7 @@ fieldset {
   cursor: pointer;
   padding-left: 2rem;
   text-align: left;
-  color: #333;
+  color: #fff;
   display: block;
 }
 
@@ -490,7 +512,8 @@ fieldset {
   color: #999;
 }
 
-.radio .helper::before, .radio .helper::after {
+.radio .helper::before,
+.radio .helper::after {
   content: "";
   position: absolute;
   left: 0;
@@ -532,7 +555,6 @@ fieldset {
 }
 
 .checkbox .helper {
-  color: #999;
   position: absolute;
   top: 0;
   left: 0;
@@ -545,11 +567,12 @@ fieldset {
   transition: border-color 0.28s ease;
 }
 
-.checkbox .helper::before, .checkbox .helper::after {
+.checkbox .helper::before,
+.checkbox .helper::after {
   position: absolute;
   height: 0;
   width: 0.2rem;
-  background-color: #337ab7;
+  background-color: rgba(105, 250, 61, 0.781);
   display: block;
   -webkit-transform-origin: left top;
   transform-origin: left top;
@@ -565,7 +588,6 @@ fieldset {
   left: 0.38rem;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
-  box-shadow: 0 0 0 0.0625rem #fff;
 }
 
 .checkbox .helper::after {
@@ -576,14 +598,15 @@ fieldset {
 }
 
 .checkbox label:hover .helper {
-  color: #337ab7;
+  color: #4a4a4a;
 }
 
 .checkbox input:checked ~ .helper {
-  color: #337ab7;
+  color: #fafafa;
 }
 
-.checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
+.checkbox input:checked ~ .helper::after,
+.checkbox input:checked ~ .helper::before {
   opacity: 1;
   -webkit-transition: height 0.28s ease;
   transition: height 0.28s ease;
@@ -604,14 +627,18 @@ fieldset {
   margin-top: 1rem;
 }
 
-.has-error .legend.legend, .has-error.form-group .control-label.control-label {
+.has-error .legend.legend,
+.has-error.form-group .control-label.control-label {
   color: #d9534f;
 }
 
 .has-error.form-group .form-help,
-.has-error.form-group .helper, .has-error.checkbox .form-help,
-.has-error.checkbox .helper, .has-error.radio .form-help,
-.has-error.radio .helper, .has-error.form-radio .form-help,
+.has-error.form-group .helper,
+.has-error.checkbox .form-help,
+.has-error.checkbox .helper,
+.has-error.radio .form-help,
+.has-error.radio .helper,
+.has-error.form-radio .form-help,
 .has-error.form-radio .helper {
   color: #d9534f;
 }
@@ -624,10 +651,14 @@ fieldset {
 
 .button {
   position: relative;
-  background: currentColor;
-  border: 1px solid currentColor;
+  background-color: transparent;
+  border: 1px solid #f8f8f8;
   font-size: 1.1rem;
-  color: #4f93ce;
+  font-family: "Arvo", sans-serif;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f8f8f8;
   margin: 3rem 0;
   padding: 0.75rem 3rem;
   cursor: pointer;
@@ -635,6 +666,32 @@ fieldset {
   transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
   overflow: hidden;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+form {
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  margin: 10% auto;
+  margin-bottom: 1px;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  color: #342e37;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .button span {
@@ -646,8 +703,8 @@ fieldset {
 .button::before {
   content: "";
   position: absolute;
-  background: #071017;
-  border: 50vh solid #1d4567;
+  background: #94ff62;
+  border: 50vh solid #ffffff;
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
@@ -665,7 +722,8 @@ fieldset {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
-.button:active::before, .button:focus::before {
+.button:active::before,
+.button:focus::before {
   -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
@@ -679,6 +737,21 @@ fieldset {
   outline: none;
 }
 
+label {
+  font-family: "Lato", sans-serif;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 /* Mobile Styles */
 /* Basline Mobile */
 @media only screen and (max-width: 600px) {

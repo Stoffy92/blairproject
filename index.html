@@ -39,7 +39,7 @@
 					<h1 class="header-bride-text">Blair</h1>
 					<h1 class="header-and-text">&</h1>
 					<h1 class="header-groom-text">Zac</h1>
-					<button class="rsvp-button">RSVP</button>
+					<button class="rsvp-button" id="myBtn">RSVP</button>
 					<h3 class="header-subtext">Are getting married</h3>
 				</div>
 			</header>
@@ -141,8 +141,9 @@
 				</div>
 			</div>
 			<div class="form-container" id="myForm">
-				<form>
+				<form class="form">
           <h1 class="form-header-rsvp">RSVP</h1>
+          <span class="close">&times;</span>
           <div class="form-group">
               <input type="text" required="required" />
               <label for="input" class="control-label">Your Name</label
@@ -171,7 +172,7 @@
 					</div>
 				</form>
 				<div class="button-container">
-					<button type="button" class="button"><span>Submit</span></button>
+					<button type="button" class="button" id="send-btn"  onclick="change()"><span>Submit</span></button>
 				</div>
 			</div>
 		</div>
@@ -180,7 +181,7 @@
 				You are using an <strong>outdated</strong> browser. Please
 				<a href="#">upgrade your browser</a> to improve your experience.
 			</p>
-		<![endif]-->
+    <![endif]-->
 		<script type="text/javascript" src="./public/javascript.js"></script>
 		<script src="" async defer></script>
 	</body>
