@@ -29,8 +29,8 @@
 		<link
 			href="https://fonts.googleapis.com/css?family=Great+Vibes"
 			rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="loader-wrapper">
@@ -45,7 +45,9 @@
 					<h1 class="header-bride-text">Blair</h1>
 					<h1 class="header-and-text">&</h1>
 					<h1 class="header-groom-text">Zac</h1>
-					<button class="rsvp-button" id="myBtn" data-aos="fade-up">RSVP</button>
+					<button class="rsvp-button" id="myBtn" data-aos="fade-up">
+						RSVP
+					</button>
 					<h3 class="header-subtext">Are getting married</h3>
 				</div>
 			</header>
@@ -147,7 +149,13 @@
 				</div>
 			</div>
 			<div class="form-container" id="myForm">
-				<form class="form">
+				<form
+					id="form"
+					class="gform"
+					method="POST"
+					data-email="theblairwattsproject2019@gmail.com"
+					action="https://script.google.com/macros/s/AKfycbxrqiVznoomtuK7hUL_mv8GONWSuQGFkD_dRut3gA/exec"
+				>
 					<h1 class="form-header-rsvp">RSVP</h1>
 					<span class="close">&times;</span>
 					<div class="form-group">
@@ -194,10 +202,12 @@
 			src="https://code.jquery.com/jquery-3.3.1.min.js"
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="./public/javascript.js"></script>
-    <script>AOS.init();</script>
+		></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript" src="./public/javascript.js"></script>
+		<script>
+			AOS.init();
+		</script>
 		<script src="" async defer></script>
 	</body>
 </html>
