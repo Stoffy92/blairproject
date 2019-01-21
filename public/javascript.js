@@ -40,45 +40,68 @@ function initializeClock(id, endtime) {
 var deadline = new Date(Date.parse(new Date('07/20/2019 10:1 AM')));
 initializeClock('clockdiv', deadline);
 
-// function myFunction() {
-//   var change = document.getElementById("send-btn");
-//   if (change.innerHTML == "Submit")
-//   {
-//       change.innerHTML = "Sent";
-//   }
-//   else {
-//       change.innerHTML = "Submit";
-//   }
-// }
 // Get the modal
 var modal = document.getElementById('myForm');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById('myBtn');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName('close')[0];
 
-// When the user clicks on the button, open the modal 
+// When the user clicks on the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "flex";
-}
+	modal.style.display = 'flex';
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
-}
+	modal.style.display = 'none';
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+	if (event.target == modal) {
+		modal.style.display = 'none';
+	}
+};
+
+function change() {
+	document.getElementById('send-btn').value = 'Close Curtain';
 }
-function change()
-{
-    document.getElementById("send-btn").value="Close Curtain"; 
-}
+$(document).ready(function() {
+ 
+  setTimeout(function(){
+      $('body').addClass('loaded');
+  }, 1500);
+
+});
+
+// $(function() {
+//   $('#body').addClass('loaded');
+// });
+
+// $(document).ready(function() {
+
+//   setTimeout(function(){
+//       $('body').addClass('loaded');
+//   }, 3000);
+
+// });
+// window.onload= function() {
+//   document.getElementById("loader").style.display = "none"
+// }
+
+// var myVar;
+
+// function myLoader() {
+//   myVar = setTimeout(showPage, 1000);
+// }
+
+// function showPage() {
+//   document.getElementsByClassName("loader").style.display = "none";
+//   document.getElementsByClassName("hero-image").style.display = "flex";
+// }
 
 // // Get the modal
 // var modal = document.getElementById('myModal');
