@@ -29,14 +29,15 @@
 		<link
 			href="https://fonts.googleapis.com/css?family=Great+Vibes"
 			rel="stylesheet"
-		/>
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
-  <body>
-    <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-    </div>
+	<body>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
 		<div class="container">
 			<header>
 				<div class="hero-image">
@@ -44,14 +45,14 @@
 					<h1 class="header-bride-text">Blair</h1>
 					<h1 class="header-and-text">&</h1>
 					<h1 class="header-groom-text">Zac</h1>
-					<button class="rsvp-button" id="myBtn">RSVP</button>
+					<button class="rsvp-button" id="myBtn" data-aos="fade-up">RSVP</button>
 					<h3 class="header-subtext">Are getting married</h3>
 				</div>
 			</header>
 			<div class="title-couple-container">
-				<h1 class="couple-container-header">The Couple</h1>
+				<h1 class="couple-container-header" data-aos="fade-down">The Couple</h1>
 				<div class="couple-container">
-					<div class="couple-bride-container">
+					<div class="couple-bride-container" data-aos="fade-right">
 						<h3 class="couple-subtext">The Bride</h3>
 						<div class="bride-img">
 							<img
@@ -72,7 +73,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="couple-groom-container">
+					<div class="couple-groom-container" data-aos="fade-left">
 						<h3 class="couple-subtext">The Groom</h3>
 						<div class="groom-img">
 							<img class="portrait-img" src="public/images/zac-portrait.svg" />
@@ -94,7 +95,7 @@
 			</div>
 			<div class="wedding-info-container">
 				<div class="wedding-card-container">
-					<div class="ceremony-venue-card">
+					<div class="ceremony-venue-card" data-aos="fade-up-left">
 						<div class="ceremony-venue-img">
 							<img class="card-img" src="public/images/wedding.svg" />
 						</div>
@@ -109,7 +110,7 @@
 							sunt in culpa qui officia deserunt mollit anim id est laborum."
 						</p>
 					</div>
-					<div class="party-venue-card">
+					<div class="party-venue-card" data-aos="fade-up-right">
 						<div class="ceremony-venue-img">
 							<img class="card-img" src="public/images/celebration.svg" />
 						</div>
@@ -126,7 +127,7 @@
 					</div>
 				</div>
 				<h1 class="countdown">Wedding Countdown</h1>
-				<div id="clockdiv">
+				<div id="clockdiv" data-aos="zoom-in">
 					<div>
 						<span class="days"></span>
 						<div class="smalltext">Days</div>
@@ -147,29 +148,29 @@
 			</div>
 			<div class="form-container" id="myForm">
 				<form class="form">
-          <h1 class="form-header-rsvp">RSVP</h1>
-          <span class="close">&times;</span>
-          <div class="form-group">
-              <input type="text" required="required" />
-              <label for="input" class="control-label">Your Name</label
-              ><i class="bar"></i>
-            </div>
+					<h1 class="form-header-rsvp">RSVP</h1>
+					<span class="close">&times;</span>
+					<div class="form-group">
+						<input type="text" required="required" />
+						<label for="input" class="control-label">Your Name</label
+						><i class="bar"></i>
+					</div>
 					<div class="form-group">
 						<select>
 							<option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
 						</select>
 						<label for="select" class="control-label">Number of guests</label
 						><i class="bar"></i>
 					</div>
-				
+
 					<div class="checkbox">
 						<label>
 							<input type="checkbox" /><i class="helper"></i>I am Attending
@@ -177,7 +178,9 @@
 					</div>
 				</form>
 				<div class="button-container">
-					<button type="button" class="button" id="send-btn"  onclick="change()"><span>Submit</span></button>
+					<button type="button" class="button" id="send-btn" onclick="change()">
+						<span>Submit</span>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -186,12 +189,15 @@
 				You are using an <strong>outdated</strong> browser. Please
 				<a href="#">upgrade your browser</a> to improve your experience.
 			</p>
-    <![endif]-->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-		<script type="text/javascript" src="./public/javascript.js"></script>
+		<![endif]-->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="./public/javascript.js"></script>
+    <script>AOS.init();</script>
 		<script src="" async defer></script>
 	</body>
 </html>
