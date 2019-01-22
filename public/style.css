@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -259,6 +263,116 @@
   margin-bottom: 10px;
 }
 
+.map-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+#maps-button {
+  letter-spacing: 2px;
+  border: 2px solid #342e37;
+  border-radius: 10px;
+  background-color: #342e37;
+  color: #342e37;
+  padding: 10px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  border-color: #342e37;
+  color: #f8f8f8;
+  font-family: "Arvo", sans-serif;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ajax-button {
+  text-align: center;
+}
+
+.submit {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #f8f8f8;
+  font-size: 1.1rem;
+  font-family: "Arvo", sans-serif;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f8f8f8;
+  margin: 1rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.submit:hover {
+  background-color: #342e37;
+}
+
+.loading {
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 15px;
+  padding: 0;
+  border: 3px solid #FFFFFF;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  border-left: 3px solid rgba(255, 255, 255, 0);
+  background-color: transparent !important;
+  animation-name: rotateAnimation;
+  -webkit-animation-name: wk-rotateAnimation;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes wk-rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.fa {
+  color: #ffffff;
+  font-size: 18px !important;
+  position: absolute;
+  left: 50%;
+  top: 79%;
+  margin-left: -9px;
+  margin-top: -9px;
+  -webkit-transform: scaleX(0) !important;
+  transform: scaleX(0) !important;
+}
+
+.finish {
+  -webkit-transform: scaleX(1) !important;
+  transform: scaleX(1) !important;
+}
+
+.hide-loading {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) !important;
+  transform: rotate(0deg) !important;
+  -webkit-transform: scale(0) !important;
+  transform: scale(0) !important;
+}
+
 .couple-container {
   display: flex;
   justify-content: center;
@@ -290,7 +404,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./images/couple_gradient.svg);
+  background-image: url(./images/bzgradient.svg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1040,7 +1154,7 @@ label {
   }
 
   #clockdiv {
-    width: 100%;
+    width: 105%;
   }
 
   .portrait-img {

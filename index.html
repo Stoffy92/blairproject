@@ -15,6 +15,10 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="./public/style.css" />
 		<link
+			rel="stylesheet"
+			href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+		/>
+		<link
 			href="https://fonts.googleapis.com/css?family=Oleo+Script"
 			rel="stylesheet"
 		/>
@@ -57,10 +61,7 @@
 					<div class="couple-bride-container">
 						<h3 class="couple-subtext">The Bride</h3>
 						<div class="bride-img">
-							<img
-								class="portrait-img"
-								src="public/images/Blair.svg"
-							/>
+							<img class="portrait-img" src="public/images/Blair.svg" />
 						</div>
 						<h1 class="couple-subtext">Blair Davids</h1>
 						<div class="bride-img">
@@ -111,6 +112,16 @@
 							nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 							sunt in culpa qui officia deserunt mollit anim id est laborum."
 						</p>
+						<div class="map-button-container">
+							<a id="maps-button" style="cursor: pointer;" onclick="weddingAddress()"
+								>View on Map</a
+							>
+							<!-- <a id="maps-button" href="bingmaps:?cp=18.551464~73.951399">
+                <a id="maps-button" href="http://maps.apple.com/maps?q=18.551464, 73.951399"> 
+                  View on Map
+                </a>
+               </a> -->
+						</div>
 					</div>
 					<div class="party-venue-card">
 						<div class="ceremony-venue-img">
@@ -126,6 +137,16 @@
 							nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 							sunt in culpa qui officia deserunt mollit anim id est laborum."
 						</p>
+						<div class="map-button-container">
+							<a id="maps-button" style="cursor: pointer;" onclick="receptionAddress()"
+								>View on Map</a
+							>
+							<!-- <a id="maps-button" href="bingmaps:?cp=18.551464~73.951399">
+                <a id="maps-button" href="http://maps.apple.com/maps?q=18.551464, 73.951399"> 
+                  View on Map
+                </a>
+               </a> -->
+						</div>
 					</div>
 				</div>
 				<h1 class="countdown">Wedding Countdown</h1>
@@ -149,42 +170,69 @@
 				</div>
 			</div>
 			<div class="form-container" id="myForm">
-            <form class="gform pure-form pure-form-stacked" method="POST" data-email="theblairwattsproject2019@gmail.com"
-            action="https://script.google.com/macros/s/AKfycbxcgegDZ6FtfKReiMoh_7W_AG9nwTnrqbCedVpc/exec">
+				<form
+					id="gform"
+					class="gform"
+					method="POST"
+					data-email="theblairwattsproject2019@gmail.com"
+					action="https://script.google.com/macros/s/AKfycbxcgegDZ6FtfKReiMoh_7W_AG9nwTnrqbCedVpc/exec"
+				>
 					<h1 class="form-header-rsvp">RSVP</h1>
 					<span class="close">&times;</span>
 					<div class="form-group">
-              <input id="name" name="name" required="required" />
-              <label for="input" class="control-label">Your Name</label>
-              <i class="bar"></i>
+						<input id="name" name="name" required="required" />
+						<label for="input" class="control-label">Your Name</label>
+						<i class="bar"></i>
 					</div>
 					<div class="form-group">
-              <select id="guestsNum" name="Number of Guests">
-                  <option>0</option>
-                  <option>+ 1</option>
-                  <option>+ 2</option>
-                  <option>+ 3</option>
-                  <option>+ 4</option>
-                  <option>+ 5</option>
-              </select>
-                <label for="select" list="guestsNum" name="Number of Guests" class="control-label">Number of guests</label>
-                <i class="bar"></i>
+						<select id="guestsNum" name="Number of Guests">
+							<option>0</option>
+							<option>+ 1</option>
+							<option>+ 2</option>
+							<option>+ 3</option>
+							<option>+ 4</option>
+							<option>+ 5</option>
+						</select>
+						<label
+							for="select"
+							list="guestsNum"
+							name="Number of Guests"
+							class="control-label"
+							>Number of guests</label
+						>
+						<i class="bar"></i>
 					</div>
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" id="checkbox" name="is Attending" value="Yes" /><i class="helper"></i>I am Attending
+							<input
+								type="checkbox"
+								id="checkbox"
+								name="is Attending"
+								value="Yes"
+								required="required"
+							/><i class="helper"></i>I am Attending
 						</label>
-          </div>
-          <div class="button-container">
+					</div>
+					<div class="button-holder">
+						<div class="ajax-button">
+							<div class="fa fa-check done"></div>
+							<div class="fa fa-close failed"></div>
+							<button id="submit" form="gform" class="submit">Send</button>
+						</div>
+					</div>
+					<!-- <div class="button-container">
               <button class="button">Send</button>
-          </div>
-          <div class="thankyou_message" style="display:none;">
-              <p>Thank you for your RSVP! <br> We will be in contact with you soon!</p>
-            </div>
+          </div> -->
+					<div class="thankyou_message" style="display:none;">
+						<p>
+							Thank you for your RSVP! <br />
+							We will be in contact with you soon!
+						</p>
+					</div>
 				</form>
-				</div>
 			</div>
 		</div>
+		<!-- </div> -->
 		<!--[if lt IE 7]>
 			<p class="browsehappy">
 				You are using an <strong>outdated</strong> browser. Please
@@ -200,8 +248,11 @@
 		<script type="text/javascript" src="./public/javascript.js"></script>
 		<script>
 			AOS.init();
-    </script>
-    <script data-cfasync="false" src="./public/form-submission-handler.js"></script>
+		</script>
+		<script
+			data-cfasync="false"
+			src="./public/form-submission-handler.js"
+		></script>
 		<script src="" async defer></script>
 	</body>
 </html>

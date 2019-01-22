@@ -103,7 +103,10 @@
       xhr.send(encoded);
     }
   }
+
   
+  
+
   function loaded() {
     console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form
@@ -120,4 +123,91 @@
       buttons[i].disabled = true;
     }
   }
+
+  // var validator = $( "#gform" ).validate();
+  //       validator.element( "#submit" );
+//   $('.submit').click(function(){
+//     if($('#gform').valid()){
+//       $(document).ready(function() {
+//         $(".submit").click(function() {
+//           $(".submit").addClass("loading");
+//           setTimeout(function() {
+//             $(".submit").addClass("hide-loading");
+//             // For failed icon just replace ".done" with ".failed"
+//             $(".done").addClass("finish");
+//           }, 1800);
+//           setTimeout(function() {
+//             $(".submit").removeClass("loading");
+//             $(".submit").removeClass("hide-loading");
+//             $(".done").removeClass("finish");
+//             $(".failed").removeClass("finish");
+//           }, 5000);
+//         })
+//       });
+//     }
+//  });
+
+  // $("#gform").valid();
+
+  var validate = false;
+$('#gform input').each(function(){
+    if($(this).val() != '' || $(this).attr('checked'))
+        validate = true;
+});
+if(!validate){
+    alert('Please select at least one filter');
+    return false;
+}
+else { 
+  $(document).ready(function() {
+    $(".submit").click(function() {
+      $(".submit").addClass("loading");
+      setTimeout(function() {
+        $(".submit").addClass("hide-loading");
+        // For failed icon just replace ".done" with ".failed"
+        $(".done").addClass("finish");
+      }, 1800);
+      setTimeout(function() {
+        $(".submit").removeClass("loading");
+        $(".submit").removeClass("hide-loading");
+        $(".done").removeClass("finish");
+        $(".failed").removeClass("finish");
+      }, 5000);
+    })
+  });
+}
+
+  // $(document).ready(function() {
+  //   $(".submit").click(function() {
+  //     $(".submit").addClass("loading");
+  //     setTimeout(function() {
+  //       $(".submit").addClass("hide-loading");
+  //       // For failed icon just replace ".done" with ".failed"
+  //       $(".done").addClass("finish");
+  //     }, 1800);
+  //     setTimeout(function() {
+  //       $(".submit").removeClass("loading");
+  //       $(".submit").removeClass("hide-loading");
+  //       $(".done").removeClass("finish");
+  //       $(".failed").removeClass("finish");
+  //     }, 5000);
+  //   })
+  // });
+
+  // $(document).ready(function() {
+  //   $(".button").click(function() {
+  //     $(".button").addClass("loading");
+  //     setTimeout(function() {
+  //       $(".button").addClass("hide-loading");
+  //       // For failed icon just replace ".done" with ".failed"
+  //       $(".done").addClass("finish");
+  //     }, 3000);
+  //     setTimeout(function() {
+  //       $(".button").removeClass("loading");
+  //       $(".button").removeClass("hide-loading");
+  //       $(".button").removeClass("finish");
+  //       $(".button").removeClass("finish");
+  //     }, 5000);
+  //   })
+  // });
 })();

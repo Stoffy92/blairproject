@@ -66,20 +66,66 @@ window.onclick = function(event) {
 	}
 };
 
-function change() {
-	document.getElementById('send-btn').value = 'Close Curtain';
-}
 $(document).ready(function() {
- 
-  setTimeout(function(){
-      $('body').addClass('loaded');
-  }, 1500);
-
+	setTimeout(function() {
+		$('body').addClass('loaded');
+	}, 1500);
 });
 
+function receptionAddress() {
+	// If it's an iPhone..
+	if (
+		navigator.platform.indexOf('iPhone') != -1 ||
+		navigator.platform.indexOf('iPod') != -1 ||
+		navigator.platform.indexOf('iPad') != -1
+	)
+		//  window.open("maps://maps.google.com/maps?daddr=Taling Ngam, Ko Samui District, Surat Thani 84140, Thailand");
+		window.open(
+			'https://www.google.co.nz/maps/place/Villa+Laem+Sor/@9.4110593,99.9598396,16.33z/data=!4m12!1m6!3m5!1s0x3054f4cece7cbc0d:0xec45e773bcff5e9a!2sVilla+Laem+Sor!8m2!3d9.4111329!4d99.9628853!3m4!1s0x3054f4cece7cbc0d:0xec45e773bcff5e9a!8m2!3d9.4111329!4d99.9628853'
+		);
+	//  window.open("maps://maps.google.com/maps?daddr=Taling Ngam, Ko Samui District, Surat Thani 84140, Thailand");
+	else
+		window.open(
+			'https://www.google.co.nz/maps/place/Villa+Laem+Sor/@9.4110593,99.9598396,16.33z/data=!4m12!1m6!3m5!1s0x3054f4cece7cbc0d:0xec45e773bcff5e9a!2sVilla+Laem+Sor!8m2!3d9.4111329!4d99.9628853!3m4!1s0x3054f4cece7cbc0d:0xec45e773bcff5e9a!8m2!3d9.4111329!4d99.9628853'
+		);
+}
+
+function weddingAddress() {
+	// If it's an iPhone..
+	if (
+		navigator.platform.indexOf('iPhone') != -1 ||
+		navigator.platform.indexOf('iPod') != -1 ||
+		navigator.platform.indexOf('iPad') != -1
+	)
+		//  window.open("maps://maps.google.com/maps?daddr=Taling Ngam, Ko Samui District, Surat Thani 84140, Thailand");
+		window.open(
+			'https://www.google.co.nz/maps/place/Saint+Anna+Catholic+Church/@9.489544,99.9058528,12.42z/data=!4m5!3m4!1s0x3054f7addd45f5d3:0xb8fce6b9e397a70d!8m2!3d9.541032!4d99.93679'
+		);
+	//  window.open("maps://maps.google.com/maps?daddr=Taling Ngam, Ko Samui District, Surat Thani 84140, Thailand");
+	else
+		window.open(
+			'https://www.google.co.nz/maps/place/Saint+Anna+Catholic+Church/@9.489544,99.9058528,12.42z/data=!4m5!3m4!1s0x3054f7addd45f5d3:0xb8fce6b9e397a70d!8m2!3d9.541032!4d99.93679'
+		);
+}
+
+// $(document).ready(function() {
+//   $(".submit").click(function() {
+//     $(".submit").addClass("loading");
+//     setTimeout(function() {
+//       $(".submit").addClass("hide-loading");
+//       // For failed icon just replace ".done" with ".failed"
+//       $(".done").addClass("finish");
+//     }, 3000);
+//     setTimeout(function() {
+//       $(".submit").removeClass("loading");
+//       $(".submit").removeClass("hide-loading");
+//       $(".done").removeClass("finish");
+//       $(".failed").removeClass("finish");
+//     }, 5000);
+//   })
+// });
+
 // FORM SUBMISSION LOGIC
-
-
 
 // $(function() {
 //   $('#body').addClass('loaded');

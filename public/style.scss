@@ -17,6 +17,10 @@ $boxShadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 	margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -256,6 +260,129 @@ $boxShadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 	text-shadow: -1px 0 black, 0 1.4px black, 1px 0 black, 0 -1px black;
 	margin-bottom: 10px;
 }
+.map-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+#maps-button {
+  letter-spacing: 2px;
+	border: 2px solid $grey;
+	border-radius: 10px;
+	background-color: $grey;
+	color: $grey;
+	padding: 10px 30px;
+	font-size: 1em;
+	cursor: pointer;
+	border-color: $grey;
+	color: $white;
+  font-family: $font-rsvp; // iOS not using correct font
+  box-shadow: $boxShadow;	
+}
+
+
+.ajax-button{
+  // position:relative;
+  // display:inline-block;
+  // width:100px;
+  // height:40px;
+  // left:50%;
+  // top:50%;
+  // margin-left:-50px;
+  // margin-top:-20px;
+  text-align:center;
+}
+.submit{
+  position: relative;
+	background-color: transparent;
+	border: 1px solid $white;
+	font-size: 1.1rem;
+	font-family: $font-rsvp;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: $white;
+	margin: 1rem 0;
+	padding: 0.75rem 3rem;
+	cursor: pointer;
+	-webkit-transition: background-color 0.28s ease, color 0.28s ease,
+		box-shadow 0.28s ease;
+	transition: background-color 0.28s ease, color 0.28s ease,
+		box-shadow 0.28s ease;
+	overflow: hidden;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+		0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  // appearance: none;
+  // width:100px;
+  // height:40px;
+  // background-color:#111111;
+  // border:2px solid #FFFFFF;
+  // border-radius:10px;
+  // color:#FFFFFF;
+  // font-size:17px;
+  // cursor:pointer !important;
+  // outline:none;
+}
+
+.submit:hover{
+  background-color: $grey;
+}
+.loading{
+  font-size:0;
+  width:30px;
+  height:30px;
+  margin-top:5px;
+  border-radius:15px;
+  padding:0;
+  border:3px solid #FFFFFF;
+  border-bottom:3px solid rgba(255,255,255,0.0);
+  border-left:3px solid rgba(255,255,255,0.0);
+  background-color:transparent !important;
+  animation-name: rotateAnimation;
+  -webkit-animation-name: wk-rotateAnimation;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rotateAnimation {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes wk-rotateAnimation {
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+.fa{
+  color:#ffffff;
+  font-size:18px !important;
+  position:absolute;
+  left:50%;
+  top:79%;
+  margin-left:-9px;
+  margin-top:-9px;
+  -webkit-transform:scaleX(0) !important;
+  transform:scaleX(0) !important;
+}
+
+.finish{
+  -webkit-transform:scaleX(1) !important;
+  transform:scaleX(1) !important;
+}
+.hide-loading{
+  opacity:0;
+  -webkit-transform: rotate(0deg) !important;
+  transform: rotate(0deg) !important;
+  -webkit-transform:scale(0) !important;
+  transform:scale(0) !important;
+}
 
 
 .couple-container {
@@ -291,7 +418,7 @@ $boxShadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	background-image: url(./images/couple_gradient.svg);
+	background-image: url(./images/bzgradient.svg);
 	background-size: 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1033,7 +1160,7 @@ label {
 	}
 
 	#clockdiv {
-		width: 100%;
+		width: 105%;
 	}
 	.portrait-img {
 		height: 185px;
