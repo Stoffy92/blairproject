@@ -545,7 +545,7 @@ fieldset {
 .form-group textarea {
 	resize: none;
 }
-.form-group select {
+.form-group select, .form-group datalist {
 	width: 100%;
 	font-size: 1rem;
 	height: 1.6rem;
@@ -606,6 +606,7 @@ fieldset {
 	display: none;
 }
 .form-group select,
+.form-group datalist,
 .form-group input:focus,
 .form-group input:valid,
 .form-group input.form-file,
@@ -617,6 +618,7 @@ fieldset {
 	color: #ffffff;
 }
 .form-group select ~ .control-label,
+.form-group datalist ~ .control-label,
 .form-group input:focus ~ .control-label,
 .form-group input:valid ~ .control-label,
 .form-group input.form-file ~ .control-label,
@@ -631,16 +633,20 @@ fieldset {
 	left: 0;
 }
 .form-group select:focus,
+.form-group datalist:focus,
 .form-group input:focus,
 .form-group textarea:focus {
 	outline: none;
 }
+
 .form-group select:focus ~ .control-label,
+.form-group datalist:focus ~ .control-label,
 .form-group input:focus ~ .control-label,
 .form-group textarea:focus ~ .control-label {
 	color: #337ab7;
 }
 .form-group select:focus ~ .bar::before,
+.form-group datalist:focus ~ .bar::before,
 .form-group input:focus ~ .bar::before,
 .form-group textarea:focus ~ .bar::before {
 	width: 100%;
@@ -813,7 +819,7 @@ fieldset {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: $white;
-	margin: 3rem 0;
+	margin: 1rem 0;
 	padding: 0.75rem 3rem;
 	cursor: pointer;
 	-webkit-transition: background-color 0.28s ease, color 0.28s ease,
@@ -829,7 +835,7 @@ form {
 	margin: 15% auto; /* 15% from the top and centered */
 	margin: 10% auto;
 	margin-bottom: 1px;
-	width: 50%; /* Could be more or less, depending on screen size */
+	width: 85%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -892,7 +898,26 @@ form {
 }
 
 label {
-	font-family: $font-main;
+  color: $white;
+  font-family: $font-main;
+}
+
+.couple-paragraph {
+  display: flex;
+  justify-content: center;
+}
+
+.thankyou_message {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  color: $white;
+  font-family: $font-main;
+  text-align: center;
+}
+
+.portrait-img {
+  height: 10em;
 }
 
 /* Add Animation */
@@ -956,7 +981,7 @@ label {
 
 	.couple-bride-container,
 	.couple-groom-container {
-		width: 80%;
+		width: 90%;
 	}
 
 	.groom-info,
@@ -1011,7 +1036,7 @@ label {
 		width: 100%;
 	}
 	.portrait-img {
-		width: 185px;
+		height: 185px;
 	}
 }
 
