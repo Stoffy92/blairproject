@@ -458,13 +458,25 @@ a {
 
 .ceremony-venue-card,
 .party-venue-card {
+  position: relative;
+  display: inline-block;
   margin: auto;
   width: 35%;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
+.card-time {
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 .card-info {
+  text-align: center;
   font-family: "Lato", sans-serif;
   color: #4a4a4a;
   width: 100%;

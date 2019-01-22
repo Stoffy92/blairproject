@@ -472,18 +472,31 @@ a {
 
 .ceremony-venue-card,
 .party-venue-card {
+  position: relative;
+  display: inline-block;
 	margin: auto;
 	width: 35%;
 	box-shadow: $boxShadow;
 	border-radius: 5px;
 }
+
+.card-time {
+  font-family: $font-main;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  transform: translate( -50%, -50% );
+  color: white;
+}
 .card-info {
+  text-align: center;
 	font-family: $font-main;
 	color: $grey2;
 	width: 100%;
 	padding: 1em;
 	line-height: 1.3;
 }
+
 
 .card-img {
 	width: 100%;
