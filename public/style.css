@@ -472,7 +472,11 @@ a {
   top: 4%;
   left: 10%;
   transform: translate(-50%, -50%);
-  color: white;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  border-color: black;
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: black;
+  color: #f8f8f8;
 }
 
 .card-info {
