@@ -69,7 +69,7 @@ window.onclick = function(event) {
 $(document).ready(function() {
 	setTimeout(function() {
 		$('body').addClass('loaded');
-	}, 1500);
+	}, 1900);
 });
 
 function receptionAddress() {

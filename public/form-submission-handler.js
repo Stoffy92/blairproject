@@ -166,7 +166,7 @@ else {
         $(".submit").addClass("hide-loading");
         // For failed icon just replace ".done" with ".failed"
         $(".done").addClass("finish");
-      }, 1800);
+      }, 2400);
       setTimeout(function() {
         $(".submit").removeClass("loading");
         $(".submit").removeClass("hide-loading");

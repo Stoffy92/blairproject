@@ -295,13 +295,13 @@ a {
   background-color: transparent;
   border: 1px solid #f8f8f8;
   font-size: 1.1rem;
-  font-family: "Arvo", sans-serif;
+  font-family: "Lato", sans-serif;
   border-radius: 5px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #f8f8f8;
   margin: 1rem 0;
-  padding: 0.75rem 3rem;
+  padding: 0.75rem 8rem;
   cursor: pointer;
   -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
   transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
@@ -373,6 +373,15 @@ a {
   transform: rotate(0deg) !important;
   -webkit-transform: scale(0) !important;
   transform: scale(0) !important;
+}
+
+#clock {
+  display: inline-flex;
+}
+
+#time-text {
+  margin-left: 10px;
+  font-family: "Lato", sans-serif;
 }
 
 .couple-container {
@@ -470,7 +479,7 @@ a {
   font-family: "Lato", sans-serif;
   position: absolute;
   top: 4%;
-  left: 10%;
+  left: 5%;
   transform: translate(-50%, -50%);
   text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
   border-color: black;
@@ -524,7 +533,7 @@ a {
   background: -webkit-linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
   background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
-  width: 25%;
+  width: 35%;
   opacity: 0.7;
   border-radius: 15px;
 }
@@ -1076,7 +1085,7 @@ label {
 }
 /* Mobile Styles */
 /* Basline Mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .header-bride-text,
 .header-groom-text {
     font-size: 5.6em;
