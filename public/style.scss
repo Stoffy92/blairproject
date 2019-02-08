@@ -1087,6 +1087,7 @@ label {
 }
 
 .hashtag-container, .hashtag-container-2 {
+	padding-top: 1em;
 	display: flex;
 	justify-content: center;
 	font-family: $font-main;
@@ -1109,7 +1110,7 @@ label {
 	color: $grey2;
 }
 
-.hashtag-symbol, .hashtag-line-1 {
+.hashtag-symbol{
 	color: $grey;
 	font-size: 0.9em;
 }
@@ -1125,8 +1126,10 @@ label {
 }
 
 .hashtag-line-3 {
+	letter-spacing: 4px;
 	color: $grey;
 }
+
 
 
 /* Mobile Styles */
