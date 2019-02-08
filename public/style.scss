@@ -1086,6 +1086,48 @@ label {
 	}
 }
 
+.hashtag-container, .hashtag-container-2 {
+	display: flex;
+	justify-content: center;
+	font-family: $font-main;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.hashtag-container-3 {
+	display: flex;
+	justify-content: center;
+	font-family: $font-main;
+	padding: 15px;
+}
+
+
+.instructions {
+	font-size: 0.7em;
+	font-family: $font-main;
+	color: $grey2;
+}
+
+.hashtag-symbol, .hashtag-line-1 {
+	color: $grey;
+	font-size: 0.9em;
+}
+
+.hashtag-symbol {
+	padding-right: 5px;
+}
+
+.hashtag-line-1 {
+	letter-spacing: 4px;
+}
+
+.hashtag-line-2 {
+	color: coral;
+	letter-spacing: 4px;
+}
+
+
+
 /* Mobile Styles */
 
 /* Basline Mobile */

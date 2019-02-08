@@ -1083,6 +1083,45 @@ label {
     opacity: 1;
   }
 }
+.hashtag-container, .hashtag-container-2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.hashtag-container-3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  padding: 15px;
+}
+
+.instructions {
+  font-size: 0.7em;
+  font-family: "Lato", sans-serif;
+  color: #4a4a4a;
+}
+
+.hashtag-symbol, .hashtag-line-1 {
+  color: #342e37;
+  font-size: 0.9em;
+}
+
+.hashtag-symbol {
+  padding-right: 5px;
+}
+
+.hashtag-line-1 {
+  letter-spacing: 4px;
+}
+
+.hashtag-line-2 {
+  color: coral;
+  letter-spacing: 4px;
+}
+
 /* Mobile Styles */
 /* Basline Mobile */
 @media only screen and (max-width: 1000px) {
