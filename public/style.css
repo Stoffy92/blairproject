@@ -342,7 +342,7 @@ a {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes wk-rotateAnimation {
+@keyframes wk-rotateAnimation {
   0% {
     -webkit-transform: rotate(0deg);
   }
@@ -1083,12 +1083,18 @@ label {
     opacity: 1;
   }
 }
+
+.hashtag-container {
+  padding-top: 5em;
+}
+
 .hashtag-container, .hashtag-container-2 {
   display: flex;
   justify-content: center;
   font-family: "Lato", sans-serif;
   font-size: 1em;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .hashtag-container-3 {
@@ -1119,8 +1125,12 @@ label {
 
 .hashtag-line-2 {
   color: coral;
-  letter-spacing: 4px;
 }
+
+.hashtag-line-3 {
+  color: #4a4a4a;
+}
+
 
 /* Mobile Styles */
 /* Basline Mobile */
@@ -1210,6 +1220,7 @@ label {
 
   .wedding-card-container {
     flex-direction: column;
+    margin-bottom: 1em;
   }
 
   .ceremony-venue-card,
@@ -1226,6 +1237,10 @@ label {
   .portrait-img {
     height: 185px;
   }
+  
+  .hashtag-container {
+    padding-top: 1em;
+}
 }
 /* Tablet */
 

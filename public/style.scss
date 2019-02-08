@@ -356,7 +356,7 @@ a {
     0%   {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
-@-webkit-keyframes wk-rotateAnimation {
+@keyframes wk-rotateAnimation {
     0%   {-webkit-transform: rotate(0deg);}
     100% {-webkit-transform: rotate(360deg);}
 }
@@ -1087,7 +1087,6 @@ label {
 }
 
 .hashtag-container, .hashtag-container-2 {
-	padding-top: 1em;
 	display: flex;
 	justify-content: center;
 	font-family: $font-main;
