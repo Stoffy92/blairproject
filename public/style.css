@@ -788,6 +788,13 @@ fieldset {
   left: 0;
 }
 
+.form-kid {
+  padding-top: 1em;
+	font-size: 0.7em;
+	font-family: "Lato", sans-serif;
+	color: #ffffffde;
+}
+
 .checkbox label,
 .form-radio label {
   position: relative;
