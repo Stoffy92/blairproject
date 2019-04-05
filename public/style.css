@@ -563,7 +563,8 @@ a {
   z-index: 1;
   /* Sit on top */
   left: 25%;
-  top: 0;
+  right: 25%;
+  top: 10%;
   width: 100%;
   /* Full width */
   flex-direction: column;
